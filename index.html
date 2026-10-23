@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Salguero | Unity Developer · C# · Shaders y VFX</title>
+    <meta name="description" content="Juan Salguero, Unity Developer en Bogotá. Programación C#, shaders, VFX y optimización para móvil y VR. Proyectos para Bancolombia, Movistar, Virgin y CeraVe, y una app publicada en Google Play.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Juan Salguero | Unity Developer · C# · Shaders & VFX">
+    <meta property="og:description" content="Unity Developer · C# · Shaders y VFX · Optimización para móvil y VR.">
+    <meta property="og:url" content="https://juansalguero5.github.io/">
+    <meta property="og:image" content="https://juansalguero5.github.io/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://juansalguero5.github.io/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <!-- NAVEGACIÓN SUPERIOR -->
+    <nav class="topbar" aria-label="Secciones">
+        <a class="topbar-brand" href="#sobremi">Juan Salguero</a>
+        <div class="topbar-links">
+            <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
+            <a class="nav-vfx" href="#vfx" data-i18n="nav.vfx">Shaders y VFX</a>
+            <a href="#experiencia" data-i18n="nav.exp">Experiencia</a>
+            <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+        </div>
+        <div class="lang-switch" role="group" aria-label="Idioma / Language">
+            <button type="button" data-lang="es" aria-pressed="true">ES</button>
+            <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+    </nav>
+
+    <!-- LINKS LATERALES (solo escritorio) -->
+    <aside class="side-links" aria-label="Enlaces">
+        <a href="https://www.linkedin.com/in/juansalguero05/" target="_blank" rel="noopener" title="LinkedIn">
+            <img src="assets/icons/linkedin.svg" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/JuanSalguero5" target="_blank" rel="noopener" title="GitHub">
+            <img src="assets/icons/github.svg" alt="GitHub">
+        </a>
+        <a href="https://jrnmslgrgmail.itch.io" target="_blank" rel="noopener" title="itch.io">
+            <img src="assets/icons/itch.svg" alt="itch.io">
+        </a>
+        <a class="cv-link" href="CV.pdf" download="CV-Juan-Salguero.pdf" title="CV">
+            <img src="assets/icons/cv.svg" alt="CV">
+        </a>
+        <a href="mailto:jrnmslgr@gmail.com" title="Email">
+            <img src="assets/icons/mail.svg" alt="Email">
+        </a>
+        <a href="https://wa.me/573028307784" target="_blank" rel="noopener" title="WhatsApp">
+            <img src="assets/icons/whatsapp.svg" alt="WhatsApp">
+        </a>
+    </aside>
+
+    <main>
+
+    <!-- SOBRE MÍ -->
+    <header class="hero" id="sobremi">
+        <div class="hero-content">
+            <h1>Juan Salguero</h1>
+            <p class="hero-role" data-i18n="hero.role">Unity Developer · C# · Shaders y VFX</p>
+            <p class="hero-bio" data-i18n="hero.bio">Desarrollador Unity enfocado en programación C#, con un valor extra: también hago mis propios shaders y efectos visuales, y los optimizo para móvil y VR. Desde 2022 he desarrollado apps, juegos y experiencias VR y AR para marcas como Bancolombia, Movistar, Virgin y CeraVe. En <strong>Carnet Go</strong>, publicada en Google Play, optimicé niveles y shaders y mejoré la fluidez en móviles un 20%.</p>
+            <div class="hero-cta">
+                <a class="btn btn-primary" href="#reel" data-i18n="hero.reel">▶ Ver demo reel</a>
+                <a class="btn" href="#proyectos" data-i18n="hero.projects">Ver proyectos</a>
+                <a class="btn cv-link" href="CV.pdf" download="CV-Juan-Salguero.pdf" data-i18n="cta.cv">Descargar CV</a>
+                <a class="btn" href="https://www.linkedin.com/in/juansalguero05/" target="_blank" rel="noopener">LinkedIn</a>
+                <a class="btn" href="https://github.com/JuanSalguero5" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+        <ul class="hero-stats">
+            <li><strong>2022</strong><span data-i18n="stat1">desarrollando en Unity</span></li>
+            <li><strong data-i18n="stat2n">6 marcas</strong><span data-i18n="stat2">clientes freelance</span></li>
+            <li><strong>Google Play</strong><span data-i18n="stat3">app publicada</span></li>
+        </ul>
+    </header>
+
+    <!-- DEMO REEL -->
+    <section class="reel-section" id="reel">
+        <h2 class="section-title">Demo reel</h2>
+        <div class="reel-frame">
+            <button type="button" class="reel-play" data-yt="ZM9maJrY824" aria-label="Play demo reel">
+                <img src="https://i.ytimg.com/vi/ZM9maJrY824/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/ZM9maJrY824/hqdefault.jpg'" alt="">
+                <span class="reel-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+        <a class="reel-yt" href="https://youtu.be/ZM9maJrY824" target="_blank" rel="noopener" data-i18n="reel.yt">Ver en YouTube →</a>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="skills-section">
+        <h2 class="section-title" data-i18n="skills.title">Habilidades técnicas</h2>
+        <div class="skills-groups">
+            <div class="skill-group">
+                <h3 data-i18n="skills.prog">Programación</h3>
+                <ul class="chips">
+                    <li><img src="assets/icons/csharp.svg" alt="">C#</li>
+                    <li data-i18n="skills.oop">POO</li>
+                    <li><img src="assets/icons/unity.svg" alt="">Unity</li>
+                    <li><img src="assets/icons/unreal.svg" alt="">Unreal Engine</li>
+                    <li><img src="assets/icons/github.svg" alt="">Git / GitHub</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <h3 data-i18n="skills.gfx">Gráficos y rendimiento</h3>
+                <ul class="chips">
+                    <li>Shaders (Shader Graph)</li>
+                    <li data-i18n="skills.vfx">VFX y partículas</li>
+                    <li data-i18n="skills.opt">Optimización móvil y VR</li>
+                    <li data-i18n="skills.level">Diseño de niveles</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <h3 data-i18n="skills.platforms">Plataformas</h3>
+                <ul class="chips">
+                    <li>Android</li>
+                    <li>VR</li>
+                    <li>AR</li>
+                    <li>PC / Web</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <h3 data-i18n="skills.art">Arte 3D y 2D</h3>
+                <ul class="chips">
+                    <li><img src="assets/icons/blender.svg" alt="">Blender</li>
+                    <li><img src="assets/icons/substance-painter.svg" alt="">Substance Painter</li>
+                    <li><img src="assets/icons/substance-designer.svg" alt="">Substance Designer</li>
+                    <li><img src="assets/icons/photoshop.svg" alt="">Photoshop</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <h3 data-i18n="skills.also">También he usado</h3>
+                <ul class="chips chips-muted">
+                    <li><img src="assets/icons/roblox-studio.svg" alt="">Roblox Studio</li>
+                    <li><img src="assets/icons/touchdesigner.svg" alt="">TouchDesigner</li>
+                    <li>HTML / CSS</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS DESTACADOS -->
+    <section class="portfolio-section" id="proyectos">
+        <h2 class="section-title" data-i18n="featured.title">Proyectos destacados</h2>
+        <div class="featured-grid">
+            <article class="card card-featured">
+                <a class="card-media" href="https://play.google.com/store/apps/details?id=com.CarnetGo.autoescuela&amp;hl=es" target="_blank" rel="noopener" aria-label="Carnet Go · Google Play">
+                    <video class="lazy-video" muted loop playsinline preload="none" poster="assets/clips/CarnetGo.jpg">
+                        <source src="assets/clips/CarnetGo.mp4" type="video/mp4">
+                    </video>
+                </a>
+                <div class="card-body">
+                    <div class="card-tags"><span>Android</span><span>Google Play</span><span>04/2025 – 07/2025</span></div>
+                    <h3>Carnet Go</h3>
+                    <p class="card-role">Technical Artist / Unity Developer</p>
+                    <ul class="card-points">
+                        <li data-i18n="carnet.1">Diseñé niveles y shaders optimizados para móvil.</li>
+                        <li data-i18n="carnet.2">Mejoré la fluidez en dispositivos móviles un 20%.</li>
+                    </ul>
+                    <a class="card-link" href="https://play.google.com/store/apps/details?id=com.CarnetGo.autoescuela&amp;hl=es" target="_blank" rel="noopener" data-i18n="link.play">Ver en Google Play →</a>
+                </div>
+            </article>
+            <article class="card card-featured">
+                <a class="card-media" href="https://jrnmslgrgmail.itch.io/mazeman" target="_blank" rel="noopener" aria-label="Mazeman · itch.io">
+                    <video class="lazy-video" muted loop playsinline preload="none" poster="assets/clips/mazeman.jpg">
+                        <source src="assets/clips/mazeman.mp4" type="video/mp4">
+                    </video>
+                </a>
+                <div class="card-body">
+                    <div class="card-tags"><span>PC / Web</span><span>itch.io</span><span>09/2024 – 10/2024</span></div>
+                    <h3>Mazeman</h3>
+                    <p class="card-role" data-i18n="maze.role">Desarrollo completo: programación y arte</p>
+                    <ul class="card-points">
+                        <li data-i18n="maze.1">Juego de terror con estética retro inspirada en la era PS1.</li>
+                        <li data-i18n="maze.2">Hice todo el juego en Unity, de la programación al arte.</li>
+                    </ul>
+                    <a class="card-link" href="https://jrnmslgrgmail.itch.io/mazeman" target="_blank" rel="noopener" data-i18n="link.itch">Jugar en itch.io →</a>
+                </div>
+            </article>
+            <article class="card card-featured">
+                <a class="card-media" href="https://www.youtube.com/watch?v=OY3N_xk_7Do" target="_blank" rel="noopener" aria-label="Xantaf3 · YouTube">
+                    <video class="lazy-video" muted loop playsinline preload="none" poster="assets/clips/Xantaf3.jpg"><source src="assets/clips/Xantaf3.mp4" type="video/mp4"></video>
+                </a>
+                <div class="card-body">
+                    <div class="card-tags"><span>PC / Web</span><span>10/2026</span></div>
+                    <h3>Xantaf3</h3>
+                    <p class="card-role">Technical Artist</p>
+                    <ul class="card-points">
+                        <li data-i18n="xan.1">Reduje los draw calls de más de 3.000 a 557 (−81%).</li>
+                        <li data-i18n="xan.2">Agrupé materiales y texturas, horneé la iluminación y organicé capas de luz.</li>
+                        <li data-i18n="xan.3">Ajusté el occlusion culling de la cámara para no renderizar lo que no se ve.</li>
+                    </ul>
+                    <a class="card-link" href="https://www.youtube.com/watch?v=OY3N_xk_7Do" target="_blank" rel="noopener" data-i18n="link.video">Ver video →</a>
+                </div>
+            </article>
+            <article class="card card-featured">
+                <a class="card-media portrait" href="https://youtube.com/shorts/CFylgyUT-08" target="_blank" rel="noopener" aria-label="Magia IA · YouTube" style="--poster:url('assets/clips/StreamDifussionUnity.jpg')">
+                    <video class="lazy-video" muted loop playsinline preload="none" poster="assets/clips/StreamDifussionUnity.jpg"><source src="assets/clips/StreamDifussionUnity.mp4" type="video/mp4"></video>
+                </a>
+                <div class="card-body">
+                    <div class="card-tags"><span>Android / PC</span><span data-i18n="tag.ai">IA</span></div>
+                    <h3 data-i18n="ai.title">Magia IA: dibujo en tiempo real</h3>
+                    <p class="card-role">Unity Developer</p>
+                    <ul class="card-points">
+                        <li data-i18n="ai.1">Desarrollé en Unity una app de dibujo para Android que envía por UDP las coordenadas y colores de cada trazo a TouchDesigner.</li>
+                        <li data-i18n="ai.2">Integré StreamDiffusion, una IA que transforma el dibujo en tiempo real según el prompt elegido (peces, flores, etc.).</li>
+                    </ul>
+                    <a class="card-link" href="https://youtube.com/shorts/CFylgyUT-08" target="_blank" rel="noopener" data-i18n="link.video">Ver video →</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- MÁS PROYECTOS -->
+    <section class="portfolio-section">
+        <h2 class="section-title" data-i18n="more.title">Más proyectos</h2>
+
+        <div class="category-filters" role="group" aria-label="Filtros">
+            <button type="button" class="filter-btn active" data-filter="all" data-i18n="filter.all">Todos</button>
+            <button type="button" class="filter-btn" data-filter="juego" data-i18n="filter.games">Juegos</button>
+            <button type="button" class="filter-btn" data-filter="marca" data-i18n="filter.brands">Marcas y apps</button>
+            <button type="button" class="filter-btn" data-filter="vr">VR</button>
+        </div>
+
+        <div class="gallery-grid" id="games-gallery">
+            <article class="card" data-category="juego">
+                <!-- Cuando tengas el link de YouTube, cambia este <div> por <a class="card-media" href="LINK" target="_blank" rel="noopener"> -->
+                <div class="card-media">
+                    <video class="lazy-video" muted loop playsinline preload="none" poster="assets/clips/DriveY2K.jpg"><source src="assets/clips/DriveY2K.mp4" type="video/mp4"></video>
+                </div>
+                <div class="card-body">
+                    <div class="card-tags"><span data-i18n="tag.procedural">Procedural</span><span>VFX</span><span>Shaders</span></div>
+                    <h3>Drive Y2K</h3>
+                    <p class="card-role" data-i18n="role.progta">Programador y Technical Artist</p>
+                    <ul class="card-points">
+                        <li data-i18n="drive.1">Desarrollé varios sistemas procedurales para el juego.</li>
+                        <li data-i18n="drive.2">Hice todos los VFX y shaders.</li>
+                        <li data-i18n="drive.3">Diseñé un feedback visual claro y satisfactorio para el jugador.</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="card" data-category="juego">
+                <a class="card-media" href="https://jrnmslgrgmail.itch.io/tinguadelica" target="_blank" rel="noopener" aria-label="TinguaDelica · itch.io">
+                    <video class="lazy-video" muted loop playsinline preload="none" poster="assets/clips/tinguadelica.jpg"><source src="assets/clips/tinguadelica.mp4" type="video/mp4"></video>
+                </a>
+                <div class="card-body">
+                    <div class="card-tags"><span>PC / Web</span><span>itch.io</span><span>06/2023</span></div>
+                    <h3>TinguaDelica</h3>
+                    <p class="card-role" data-i18n="role.prog">Programador</p>
+                    <ul class="card-points">
+                        <li data-i18n="ting.1">Diseñé y programé la batalla contra el jefe final.</li>
+                        <li data-i18n="ting.2">Implementé las mecánicas principales de juego.</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="card" data-category="juego">
+                <a class="card-media portrait" href="https://www.youtube.com/shorts/xWanf__mG5g" target="_blank" rel="noopener" aria-label="Match Cards Heli · YouTube" style="--poster:url('assets/clips/MatchCards.jpg')">
+                    <video class="lazy-video" muted loop playsinline preload="none" poster="assets/clips/MatchCards.jpg"><source src="assets/clips/MatchCards.mp4" type="video/mp4"></video>
+                </a>
+                <div class="card-body">
+                    <div class="card-tags"><span>Android</span></div>
+                    <h3>Match Cards Heli</h3>
+                    <p class="card-role" data-i18n="role.progta">Programador y Technical Artist</p>
+                    <ul class="card-points">
+                        <li data-i18n="match.1">Creé desde cero un sistema de combate de cartas, inspirado en juegos como Yu-Gi-Oh!.</li>
+                        <li data-i18n="match.2">Le di el game feel con movimientos de cámara, partículas y shaders.</li>
+                        <li data-i18n="match.3">Modo local para dos jugadores.</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="card" data-category="marca">
+                <a class="card-media" href="https://www.youtube.com/watch?v=3wAA7tuYf-c" target="_blank" rel="noopener" aria-label="Nequi · YouTube">
+                    <video class="lazy-video" muted loop playsinline preload="none" poster="assets/clips/NequiColab.jpg"><source src="assets/clips/NequiColab.mp4" type="video/mp4"></video>
+                </a>
+                <div class="card-body">
+                    <div class="card-tags"><span>PC / Web</span><span data-i18n="tag.brand">Marca</span></div>
+                    <h3 data-i18n="nequi.title">Nequi Colaboración</h3>
+                    <p class="card-role">Unity Developer</p>
+                    <ul class="card-points">
+                        <li data-i18n="nequi.1">Desarrollé desde cero una experiencia jugable completa para «La Polla Nequi», una campaña publicitaria de Nequi.</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="card" data-category="marca">
+                <a class="card-media portrait" href="https://youtube.com/shorts/wSQaZhWZW3c" target="_blank" rel="noopener" aria-label="L'Oréal · YouTube" style="--poster:url('assets/clips/LorealGif.jpg')">
+                    <video class="lazy-video" muted loop playsinline preload="none" poster="assets/clips/LorealGif.jpg"><source src="assets/clips/LorealGif.mp4" type="video/mp4"></video>
+                </a>
+                <div class="card-body">
+                    <div class="card-tags"><span>Android / PC</span><span data-i18n="tag.brand">Marca</span></div>
+                    <h3>L'Oréal Experience</h3>
+                    <p class="card-role">Unity Developer</p>
+                    <ul class="card-points">
+                        <li data-i18n="loreal.1">Desarrollé desde cero una experiencia interactiva en la que una tablet funciona como control y el PC como pantalla.</li>
+                        <li data-i18n="loreal.2">Comunicación por UDP con IP y puertos configurables, estable y sin cortes.</li>
+                        <li data-i18n="loreal.3">Diseñé shaders que enriquecen lo visual y mejoran la sensación de la experiencia.</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="card" data-category="marca">
+                <a class="card-media portrait" href="https://youtube.com/shorts/FD8GSpvuUDg" target="_blank" rel="noopener" aria-label="YouTube" style="--poster:url('assets/clips/GifMobileAdver.jpg')">
+                    <video class="lazy-video" muted loop playsinline preload="none" poster="assets/clips/GifMobileAdver.jpg"><source src="assets/clips/GifMobileAdver.mp4" type="video/mp4"></video>
+                </a>
+                <div class="card-body">
+                    <div class="card-tags"><span>Android</span><span data-i18n="tag.hyper">Hipercasual</span><span data-i18n="tag.brand">Marca</span></div>
+                    <h3 data-i18n="brand.title">Juegos para activaciones de marca</h3>
+                    <p class="card-role" data-i18n="role.prog">Programador</p>
+                    <ul class="card-points">
+                        <li data-i18n="brand.1">Desarrollé varios juegos hipercasuales para activaciones de marca.</li>
+                        <li data-i18n="brand.2">Programé el registro de jugadores en Excel, ordenado por puntaje para que las empresas contacten fácilmente a los mejores.</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="card" data-category="vr">
+                <a class="card-media" href="https://www.youtube.com/watch?v=-6uOv0qUU9Q" target="_blank" rel="noopener" aria-label="YouTube">
+                    <video class="lazy-video" muted loop playsinline preload="none" poster="assets/clips/energias-vr.jpg"><source src="assets/clips/energias-vr.mp4" type="video/mp4"></video>
+                </a>
+                <div class="card-body">
+                    <div class="card-tags"><span>VR</span><span>Meta Quest 2</span><span data-i18n="tag.training">Capacitación</span></div>
+                    <h3 data-i18n="energy.title">Capacitación de Energías VR</h3>
+                    <p class="card-role" data-i18n="role.progta">Programador y Technical Artist</p>
+                    <ul class="card-points">
+                        <li data-i18n="energy.1">Programé parte de un simulador para Meta Quest 2 que capacita a los empleados de una empresa en el manejo correcto de la energía.</li>
+                        <li data-i18n="energy.2">Optimicé con agrupación de materiales, GPU instancing y corrutinas para que funcionara fluido en VR.</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="card" data-category="vr">
+                <a class="card-media" href="https://www.youtube.com/watch?v=2zXJ3UpvBs8" target="_blank" rel="noopener" aria-label="Fatiga VR · YouTube">
+                    <video class="lazy-video" muted loop playsinline preload="none" poster="assets/clips/FatigaVR.jpg"><source src="assets/clips/FatigaVR.mp4" type="video/mp4"></video>
+                </a>
+                <div class="card-body">
+                    <div class="card-tags"><span>VR</span><span>06/2026</span></div>
+                    <h3>Fatiga VR</h3>
+                    <p class="card-role" data-i18n="role.progta">Programador y Technical Artist</p>
+                    <ul class="card-points">
+                        <li data-i18n="fat.1">Programé un recorrido guiado de concientización sobre el insomnio, con el desplazamiento controlado por vectores.</li>
+                        <li data-i18n="fat.2">Optimicé cientos de árboles y follaje, y configuré las mallas del terreno para occlusion culling: la experiencia corre fluida, sin stuttering.</li>
+                        <li data-i18n="fat.3">Creé shaders con normales animadas para varios materiales.</li>
+                        <li data-i18n="fat.4">Diseñé un sistema de parpadeo cómodo que evita el mareo y la fatiga visual.</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- SHADERS Y VFX -->
+    <section class="portfolio-section" id="vfx">
+        <div class="section-head">
+            <h2 class="section-title" data-i18n="nav.vfx">Shaders y VFX</h2>
+            <a class="btn btn-primary" href="https://www.youtube.com/watch?v=Rhehiulbx5s" target="_blank" rel="noopener" data-i18n="vfx.btn">Ver los efectos en video ▶</a>
+        </div>
+        <p class="section-intro" data-i18n="vfx.intro">Efectos visuales y shaders hechos en Unity con Shader Graph y sistemas de partículas.</p>
+        <div class="vfx-grid">
+            <figure><img src="assets/vfx/Alien.png" alt="Alien VFX" loading="lazy"><figcaption>Alien</figcaption></figure>
+            <figure><img src="assets/vfx/Amaterasu.png" alt="Amaterasu VFX" loading="lazy"><figcaption>Amaterasu</figcaption></figure>
+            <figure><img src="assets/vfx/Arma%20Sci-Fi.png" alt="Sci-Fi VFX" loading="lazy"><figcaption data-i18n="vfx.scifi">Arma Sci-Fi</figcaption></figure>
+            <figure><img src="assets/vfx/Caldero.png" alt="Caldero VFX" loading="lazy"><figcaption data-i18n="vfx.cauldron">Caldero</figcaption></figure>
+            <figure><img src="assets/vfx/Inferno.png" alt="Inferno VFX" loading="lazy"><figcaption>Inferno</figcaption></figure>
+        </div>
+    </section>
+
+    <!-- EXPERIENCIA Y FORMACIÓN -->
+    <section class="info-grid-section">
+        <div class="info-box" id="experiencia">
+            <h2 class="box-title" data-i18n="nav.exp">Experiencia</h2>
+            <ol class="timeline">
+                <li>
+                    <div class="tl-head"><strong data-i18n="exp.free.t">Unity Developer freelance</strong><span data-i18n="exp.free.d">07/2022 – actualidad</span></div>
+                    <p data-i18n="exp.free.p">Apps, AR y proyectos digitales en Unity para Virgin, Bancolombia, Movistar, CeraVe, Uniminuto y SENA. Desarrollo y optimización de funcionalidades, bases de datos locales, integración de IA y shaders.</p>
+                </li>
+                <li>
+                    <div class="tl-head"><strong data-i18n="exp.origen.t">Origen Interactive · Programador y Technical Artist</strong><span data-i18n="exp.origen.d">05/2026 – actualidad</span></div>
+                    <p data-i18n="exp.origen.p">Optimización del rendimiento de experiencias interactivas y videojuegos. Shaders con Shader Graph y mejora del game feel de varios proyectos.</p>
+                </li>
+                <li>
+                    <div class="tl-head"><strong>Turpial Vibes · Technical Artist</strong><span>04/2025 – 07/2025</span></div>
+                    <p data-i18n="exp.turpial.p">Enlace entre desarrolladores y artistas en la integración del proyecto. Optimización del rendimiento para dispositivos móviles.</p>
+                </li>
+                <li>
+                    <div class="tl-head"><strong data-i18n="exp.delirium.t">Delirium Studios · Programador y Technical Artist</strong><span>12/2022 – 04/2024</span></div>
+                    <p data-i18n="exp.delirium.p">Programador junior en varios proyectos de videojuegos para clientes. Diseño e implementación de shaders y efectos visuales optimizados en Unity.</p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="info-box">
+            <h2 class="box-title" data-i18n="edu.title">Formación</h2>
+            <ol class="timeline">
+                <li>
+                    <div class="tl-head"><strong data-i18n="edu.sena.t">SENA · Tecnólogo en Desarrollo de Videojuegos y Entornos Interactivos</strong><span data-i18n="edu.sena.d">12/2024 – actualidad</span></div>
+                    <p data-i18n="edu.sena.p">Programación, modelado 3D, animación, VR y desarrollo para Android.</p>
+                </li>
+                <li>
+                    <div class="tl-head"><strong>Generation · Bootcamp Unity Developer Jr</strong><span>03/2023 – 06/2023</span></div>
+                </li>
+                <li>
+                    <div class="tl-head"><strong>Naska Digital · Bootcamp Unreal Engine Jr</strong></div>
+                </li>
+            </ol>
+            <h3 class="box-subtitle" data-i18n="edu.courses">Cursos complementarios</h3>
+            <ul class="plain-list">
+                <li>Visual Effects for Games in Unity (Udemy)</li>
+                <li>The Ultimate 2D and 3D Shader Graph (Udemy)</li>
+                <li data-i18n="edu.udemy3">Guía definitiva del desarrollo de videojuegos en Unity (Udemy)</li>
+            </ul>
+            <h3 class="box-subtitle" data-i18n="edu.lang">Idiomas</h3>
+            <ul class="plain-list">
+                <li data-i18n="edu.lang.p">Español nativo · Inglés B1</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contacto-section" id="contacto">
+        <h2 class="section-title" data-i18n="nav.contact">Contacto</h2>
+        <p class="section-intro" data-i18n="contact.p">Bogotá, Colombia · Disponible para puestos de Unity Developer y programación de videojuegos.</p>
+        <div class="contacto-links">
+            <a class="btn btn-primary" href="mailto:jrnmslgr@gmail.com">jrnmslgr@gmail.com</a>
+            <a class="btn" href="https://www.linkedin.com/in/juansalguero05/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn" href="https://github.com/JuanSalguero5" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" href="https://jrnmslgrgmail.itch.io" target="_blank" rel="noopener">itch.io</a>
+            <a class="btn" href="https://wa.me/573028307784" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn cv-link" href="CV.pdf" download="CV-Juan-Salguero.pdf" data-i18n="cta.cv">Descargar CV</a>
+        </div>
+    </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Juan Salguero</p>
+    </footer>
+
+    <script>
+        // ---------- Idioma (ES / EN) ----------
+        const EN = {
+            'nav.projects': 'Projects',
+            'nav.vfx': 'Shaders & VFX',
+            'nav.exp': 'Experience',
+            'nav.contact': 'Contact',
+            'hero.role': 'Unity Developer · C# · Shaders & VFX',
+            'hero.bio': 'Unity developer focused on C# programming, with an extra edge: I also create my own shaders and visual effects, and optimize them for mobile and VR. Since 2022 I have built apps, games and VR/AR experiences for brands such as Bancolombia, Movistar, Virgin and CeraVe. On <strong>Carnet Go</strong>, published on Google Play, I optimized levels and shaders and improved mobile performance by 20%.',
+            'hero.reel': '▶ Watch demo reel',
+            'hero.projects': 'View projects',
+            'cta.cv': 'Download CV',
+            'stat1': 'developing in Unity',
+            'stat2n': '6 brands',
+            'stat2': 'freelance clients',
+            'stat3': 'published app',
+            'reel.yt': 'Watch on YouTube →',
+            'skills.title': 'Technical skills',
+            'skills.prog': 'Programming',
+            'skills.oop': 'OOP',
+            'skills.gfx': 'Graphics & performance',
+            'skills.vfx': 'VFX & particles',
+            'skills.opt': 'Mobile & VR optimization',
+            'skills.level': 'Level design',
+            'skills.platforms': 'Platforms',
+            'skills.art': '3D & 2D art',
+            'skills.also': 'Also used',
+            'featured.title': 'Featured projects',
+            'carnet.1': 'Designed levels and optimized shaders for mobile.',
+            'carnet.2': 'Improved performance on mobile devices by 20%.',
+            'link.play': 'View on Google Play →',
+            'maze.role': 'Solo developer: programming and art',
+            'maze.1': 'Horror game with a retro look inspired by the PS1 era.',
+            'maze.2': 'Built the entire game in Unity, from code to art.',
+            'link.itch': 'Play on itch.io →',
+            'xan.1': 'Cut draw calls from over 3,000 to 557 (−81%).',
+            'xan.2': 'Combined materials and textures, baked lighting and organized light layers.',
+            'xan.3': 'Tuned camera occlusion culling so hidden geometry is not rendered.',
+            'link.video': 'Watch video →',
+            'role.progta': 'Programmer & Technical Artist',
+            'role.prog': 'Programmer',
+            'fat.1': 'Programmed a guided insomnia-awareness tour, with movement driven by vectors.',
+            'fat.2': 'Optimized hundreds of trees and foliage and set up terrain meshes for occlusion culling: the experience runs smoothly, with no stuttering.',
+            'fat.3': 'Created shaders with animated normals for several materials.',
+            'fat.4': 'Designed a comfortable blink system that prevents motion sickness and eye strain.',
+            'more.title': 'More projects',
+            'filter.all': 'All',
+            'filter.games': 'Games',
+            'filter.brands': 'Brands & apps',
+            'tag.procedural': 'Procedural',
+            'drive.1': 'Developed several procedural systems for the game.',
+            'drive.2': 'Created all the VFX and shaders.',
+            'drive.3': 'Designed clear, satisfying visual feedback for the player.',
+            'ting.1': 'Designed and programmed the final boss battle.',
+            'ting.2': 'Implemented the core gameplay mechanics.',
+            'match.1': 'Built a card battle system from scratch, inspired by games like Yu-Gi-Oh!.',
+            'match.2': 'Added game feel with camera moves, particles and shaders.',
+            'match.3': 'Local two-player mode.',
+            'tag.brand': 'Brand',
+            'nequi.title': 'Nequi Collaboration',
+            'nequi.1': 'Built a complete playable experience from scratch for “La Polla Nequi”, an advertising campaign by Nequi.',
+            'loreal.1': 'Built from scratch an interactive experience where a tablet acts as the controller and a PC as the display.',
+            'loreal.2': 'UDP communication with configurable IPs and ports, stable and lag-free.',
+            'loreal.3': 'Designed shaders that enrich the visuals and improve the feel of the experience.',
+            'tag.ai': 'AI',
+            'ai.title': 'AI Magic: real-time drawing',
+            'ai.1': 'Built an Android drawing app in Unity that sends each stroke’s coordinates and colors to TouchDesigner over UDP.',
+            'ai.2': 'Integrated StreamDiffusion, an AI that transforms the drawing in real time based on the chosen prompt (fish, flowers, etc.).',
+            'tag.hyper': 'Hyper-casual',
+            'brand.title': 'Games for brand activations',
+            'brand.1': 'Developed several hyper-casual games for brand activations.',
+            'brand.2': 'Programmed a player registry exported to Excel and sorted by score, so companies can easily contact top players.',
+            'tag.training': 'Training',
+            'energy.title': 'Energy Safety Training VR',
+            'energy.1': 'Programmed part of a Meta Quest 2 simulator that trains a company’s employees in proper energy handling.',
+            'energy.2': 'Optimized with material batching, GPU instancing and coroutines so it ran smoothly in VR.',
+            'vfx.btn': 'Watch the effects ▶',
+            'vfx.intro': 'Visual effects and shaders made in Unity with Shader Graph and particle systems.',
+            'vfx.scifi': 'Sci-Fi Weapon',
+            'vfx.cauldron': 'Cauldron',
+            'exp.free.t': 'Freelance Unity Developer',
+            'exp.free.d': '07/2022 – present',
+            'exp.free.p': 'Apps, AR and digital projects in Unity for Virgin, Bancolombia, Movistar, CeraVe, Uniminuto and SENA. Feature development and optimization, local databases, AI integration and shaders.',
+            'exp.origen.t': 'Origen Interactive · Programmer & Technical Artist',
+            'exp.origen.d': '05/2026 – present',
+            'exp.origen.p': 'Performance optimization of interactive experiences and games. Shaders with Shader Graph and improved game feel across several projects.',
+            'exp.turpial.p': 'Bridge between developers and artists during project integration. Performance optimization for mobile devices.',
+            'exp.delirium.t': 'Delirium Studios · Programmer & Technical Artist',
+            'exp.delirium.p': 'Junior programmer on several client game projects. Designed and implemented optimized shaders and visual effects in Unity.',
+            'edu.title': 'Education',
+            'edu.sena.t': 'SENA · Technologist in Video Game and Interactive Environment Development',
+            'edu.sena.d': '12/2024 – present',
+            'edu.sena.p': 'Programming, 3D modeling, animation, VR and Android development.',
+            'edu.courses': 'Additional courses',
+            'edu.udemy3': 'The Ultimate Guide to Game Development with Unity (Udemy)',
+            'edu.lang': 'Languages',
+            'edu.lang.p': 'Spanish (native) · English B1',
+            'contact.p': 'Bogotá, Colombia · Open to Unity Developer and game programming roles.'
+        };
+        const META = {
+            es: { title: document.title, desc: document.querySelector('meta[name="description"]').content },
+            en: { title: 'Juan Salguero | Unity Developer · C# · Shaders & VFX',
+                  desc: 'Juan Salguero, Unity Developer in Bogotá, Colombia. C# programming, shaders, VFX and mobile/VR optimization. Projects for Bancolombia, Movistar, Virgin and CeraVe, plus an app published on Google Play.' }
+        };
+        const i18nEls = document.querySelectorAll('[data-i18n]');
+        i18nEls.forEach(el => { el.dataset.es = el.innerHTML; });   // el texto en español es el del HTML
+
+        function setLang(lang) {
+            i18nEls.forEach(el => {
+                const key = el.dataset.i18n;
+                el.innerHTML = (lang === 'en' && EN[key]) ? EN[key] : el.dataset.es;
+            });
+            document.documentElement.lang = lang;
+            document.querySelectorAll('.cv-link').forEach(a => {
+                a.href = lang === 'en' ? 'CV_EN.pdf' : 'CV.pdf';
+                a.download = lang === 'en' ? 'CV-Juan-Salguero-EN.pdf' : 'CV-Juan-Salguero.pdf';
+            });
+            document.title = META[lang].title;
+            document.querySelector('meta[name="description"]').content = META[lang].desc;
+            document.querySelectorAll('.lang-switch button').forEach(b => {
+                b.setAttribute('aria-pressed', String(b.dataset.lang === lang));
+            });
+            try { localStorage.setItem('lang', lang); } catch (e) {}
+        }
+        document.querySelectorAll('.lang-switch button').forEach(b => {
+            b.addEventListener('click', () => setLang(b.dataset.lang));
+        });
+
+        // Idioma inicial: ?lang=en en la URL > elección guardada > idioma del navegador
+        (function () {
+            let lang = new URLSearchParams(location.search).get('lang');
+            if (lang !== 'es' && lang !== 'en') {
+                try { lang = localStorage.getItem('lang'); } catch (e) { lang = null; }
+            }
+            if (lang !== 'es' && lang !== 'en') {
+                lang = (navigator.language || 'es').toLowerCase().startsWith('es') ? 'es' : 'en';
+            }
+            if (lang === 'en') setLang('en');
+        })();
+
+        // ---------- Demo reel: carga YouTube solo al hacer clic ----------
+        document.querySelectorAll('.reel-play').forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Abierta como archivo local, YouTube no permite el video incrustado (error 153): se abre en YouTube
+                if (location.protocol === 'file:') {
+                    window.open('https://www.youtube.com/watch?v=' + btn.dataset.yt, '_blank', 'noopener');
+                    return;
+                }
+                const iframe = document.createElement('iframe');
+                iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+                iframe.src = 'https://www.youtube-nocookie.com/embed/' + btn.dataset.yt + '?autoplay=1&rel=0&playsinline=1';
+                iframe.title = 'Demo reel · Juan Salguero';
+                iframe.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+                iframe.allowFullscreen = true;
+                btn.replaceWith(iframe);
+            });
+        });
+
+        // ---------- Filtro de proyectos ----------
+        const buttons = document.querySelectorAll('.filter-btn');
+        const cards = document.querySelectorAll('#games-gallery .card');
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                buttons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.dataset.filter;
+                cards.forEach(card => {
+                    const cats = (card.dataset.category || '').split(/\s+/);
+                    card.hidden = !(filter === 'all' || cats.includes(filter));
+                });
+            });
+        });
+
+        // ---------- Videos: solo se cargan y reproducen cuando están en pantalla ----------
+        const videos = document.querySelectorAll('.lazy-video');
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if ('IntersectionObserver' in window && !reduceMotion) {
+            const vObs = new IntersectionObserver(entries => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) { e.target.play().catch(() => {}); }
+                    else { e.target.pause(); }
+                });
+            }, { threshold: 0.25 });
+            videos.forEach(v => vObs.observe(v));
+        }
+
+        // ---------- Aparición de secciones (una sola vez) ----------
+        const revealSections = document.querySelectorAll('.reel-section, .skills-section, .portfolio-section, .info-box, .contacto-section');
+        if ('IntersectionObserver' in window && !reduceMotion) {
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            revealSections.forEach(el => { el.classList.add('reveal'); observer.observe(el); });
+        }
+    </script>
+
+</body>
+</html>
